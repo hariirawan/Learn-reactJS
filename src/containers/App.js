@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-// import FlipingCards from './FlipingCards/FlipingCards';
-import Card from './FlipingCard/FlipingCard';
 import logo from '../logo.svg';
 
 import '../assets/css/App.css';
 
-const Container = styled.section `
-    margin: 0 auto;
-`
+import Card from './Card';
 
 
 class App extends Component {
@@ -20,9 +15,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Container>
-            <Card/>
-        </Container>
+        <Card/>
       </div>
     );
   }
